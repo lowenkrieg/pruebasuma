@@ -9,7 +9,7 @@ function restar(valor1, valor3) {
     return valor1 - valor3;
 }
 function preciofinal(pb, tasad, tasaiva) {
-    return pb + (tasad / 100) + (tasaiva / 100);
+    return pb + (pb * (tasad / 100)) + (pb * (tasaiva / 100)) + ' precio neto';
 }
 console.log(sumar(3, 5));
 console.log(multiplicar(3, 5));

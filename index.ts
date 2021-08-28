@@ -8,8 +8,8 @@ return valor3*valor4;
 function restar(valor1:number, valor3:number): number{
   return valor1-valor3;
 }
-function preciofinal(pb:number, tasad:number, tasaiva: number): number{
-  return pb+(tasad/100)+(tasaiva/100);
+function preciofinal(pb:number, tasad:number, tasaiva: number): number | string{
+  return pb+(pb*(tasad/100))+(pb*(tasaiva/100))+' precio neto';
 }
   
 
